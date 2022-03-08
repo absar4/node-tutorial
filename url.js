@@ -4,7 +4,7 @@ http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write('url is = ' + req.url);
     res.end(txt);
-}).listen(8000)
+}).listen(8000);
 
 //👀⏩ There are built-in modules to easily split the query string into readable parts, such as the URL module.
 var http = require('http');
