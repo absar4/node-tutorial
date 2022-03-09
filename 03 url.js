@@ -18,16 +18,19 @@
 // }).listen(8000);
 
 //👀⏩ url.parse() method will divide it into pieces and return a URL object with each part of the address as properties
-var url = require('url');
-var adr = 'http://localhost:8080/default.htm?year=2017&month=february';
+// var url = require('url');
+// var adr = 'http://localhost:8080/default.htm?year=2022&month=february';
 //----Parse the address:
-var q = url.parse(adr, true);
+// var q = url.parse(adr, true);
 
-/*The parse method returns an object containing url properties*/
-console.log(q.host);
-console.log(q.pathname);
-console.log(q.search);
+//----The parse method returns an object containing url properties
+// console.log(q.host); // localhost:8080
+// console.log(q.pathname); // /default.htm
+// console.log(q.search); // ?year=2022&month=february
 
-/*The query property returns an object with all the querystring parameters as properties:*/
-var qdata = q.query;
-console.log(qdata.month);
+//----The query property returns an object with all the querystring parameters as properties:
+// var qdata = q.query; // stores an object ==> { year: '2022', month: 'february' }
+// console.log(qdata.month); // february
+// console.log(qdata.year); // 2022
+// console.log(qdata); // { year: '2022', month: 'february' }
+// console.log(q.query.month); // february
