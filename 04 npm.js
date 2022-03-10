@@ -5,6 +5,7 @@
  * NPM is already ready to run on your computer!
  * what is a package? =>A package in Node.js contains all the files you need for a module.
  * Modules are JavaScript libraries you can include in your project.
+ * package details are in package.json file.
  */
 
 // Installing your first package
@@ -16,3 +17,8 @@
 //   res.write(uc.upperCase("Hello World!"));
 //   res.end();
 // }).listen(8000);
+
+
+// const chalk = require('chalk');
+import {chalk} from 'chalk';
+console.log(chalk.blue('Hello World'));
