@@ -56,3 +56,10 @@ DISK: ${chalk.yellow('70%')}
 log(chalk.keyword('orange')('Yay for orange colored text!'));
 log(chalk.rgb(123, 45, 67).underline('Underlined reddish color'));
 log(chalk.hex('#DEADED').bold('Bold gray!'));
+
+
+// next package 
+// nodemon : it saves alot of your time whenever you save a file it automatically runs that file just like live server did
+// install it globally
+// $ npm i nodemon -g
+// to run nodemon just use ==> npx nodemon ./filename.js
