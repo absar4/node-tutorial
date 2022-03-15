@@ -1,0 +1,9 @@
+const path = require('path');
+const filename = path.join(__filename);
+const dirname = path.join(__dirname)
+const basename = path.basename(filename)
+const extension_name = path.extname(filename)
+console.log("Directory Name = " + dirname);
+console.log("Directory Name and File Name = " + filename);
+console.log("File Name = " + basename);
+console.log("Extension Name = " + extension_name);
