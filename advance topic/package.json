@@ -1,0 +1,12 @@
+{
+  "name": "advance-topic",
+  "version": "1.0.0",
+  "description": "Advance Server",
+  "main": "09 advance-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node 09-advance-server"
+  },
+  "author": "Absar Ahmad The Quick Code",
+  "license": "ISC"
+}
