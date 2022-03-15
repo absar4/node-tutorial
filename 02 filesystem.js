@@ -61,3 +61,8 @@
 //   if (err) throw err;
 //   console.log('File Renamed!');
 // });
+
+
+//👀⏩ copyFileSync() will take 2 arguments first is the file you want to copy and second is the file where you want to paste the data
+const fs = require('fs');
+fs.copyFileSync('./fs-files/hi.html', './fs-files/newhi.html');
