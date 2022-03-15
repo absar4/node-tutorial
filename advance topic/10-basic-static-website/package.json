@@ -1,0 +1,12 @@
+{
+  "name": "10-basic-static-website",
+  "version": "1.0.0",
+  "description": "A Basic Website That Uses Simple Routing ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "Absar The Quick Code",
+  "license": "ISC"
+}
