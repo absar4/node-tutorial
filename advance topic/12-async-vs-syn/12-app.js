@@ -25,15 +25,16 @@
 
 // 👀⏩ How to handle Asynchronous Data in Node js
 
-let a = 10;
-let b = 0;
-let loadingData = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        b = 10;
-        resolve(b)
-    }, 2000);
-});
-loadingData.then((data) => {
-    b = data;
-    console.log(`${a} + ${b} = ${a + b}`);
-});
+// let a = 10;
+// let b = 0;
+// let loadingData = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         b = 10;
+//         resolve(b)
+//     }, 2000);
+// });
+// loadingData.then((data) => {
+//     b = data;
+//     console.log(`${a} + ${b} = ${a + b}`);
+// });
+
