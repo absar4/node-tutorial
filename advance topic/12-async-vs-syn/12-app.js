@@ -12,11 +12,28 @@
 // }, 2000);
 // console.log("completed");
 
+// let a = 10;
+// let b = 0;
+
+// setTimeout(() => {
+//     b = 10;
+// }, 2000);
+
+// console.log(a + b);
+
+
+
+// 👀⏩ How to handle Asynchronous Data in Node js
+
 let a = 10;
 let b = 0;
-
-setTimeout(() => {
-    b = 10;
-}, 2000);
-
-console.log(a + b);
+let loadingData = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        b = 10;
+        resolve(b)
+    }, 2000);
+});
+loadingData.then((data) => {
+    b = data;
+    console.log(`${a} + ${b} = ${a + b}`);
+});
