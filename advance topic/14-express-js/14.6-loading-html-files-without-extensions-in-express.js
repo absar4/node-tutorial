@@ -1,4 +1,4 @@
-// Express Js Tutorial Getting Data from parameter through links
+// Loading Html Files Without extension
 const express = require('express');
 const path = require('path');
 const app = express(); //Intializing express functions 
