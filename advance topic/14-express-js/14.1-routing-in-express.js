@@ -6,7 +6,7 @@ const express = require('express');
 const app = express(); //Intializing express functions 
 
 app.get('',(req,res)=>{
-    res.send("Hello this is index page")
+    res.send("Welcome, Hello this is index page")
 });
 
 app.get('/about',(req,res)=>{
