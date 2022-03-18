@@ -1,4 +1,4 @@
-// 14.3-simple-navigation-between-pages-in-express
+// Express Js Tutorial Getting Data from parameter through links
 const express = require('express');
 const app = express(); //Intializing express functions 
 
@@ -11,7 +11,7 @@ app.get('',(req,res)=>{
 
 app.get('/about',(req,res)=>{
     res.send(`
-    <input type="text" placeholder="Enter Your Name">
+    <input type="text" placeholder="Enter Your Name" value="${req.query.name}">
     <button>Click Me</button>
     <hr>
     <a href="/">Goto Home Page</a>
