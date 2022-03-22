@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
 const middleware = require('./middleware');
+const route = express.Router();
 
-app.get('', middleware.reqFilter, (req, res) => {
+route.use(middleware.reqFilter)
+
+route.get('', (req, res) => {
     res.send('Home Page');
 });
 app.get('/about', (req, res) => {
@@ -10,12 +13,10 @@ app.get('/about', (req, res) => {
 });
 
 
-app.listen(8000,(err)=>{
-    if(!err){
-    console.log(`Example app listening at http://localhost:8000`);
+app.listen(8000, (err) => {
+    if (!err) {
+        console.log(`Example app listening at http://localhost:8000`);
     }
 });
-var server = app.listen(8888, function(){
-    var host = server.address().address;
-    var port = server.address().port;
-});
+
+app.use('/', route)
