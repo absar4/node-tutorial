@@ -15,10 +15,11 @@ con.connect(function (err) {
     var sql = "SELECT * FROM customers";
     con.query(sql, function (err, result, fields) {
         if (err) throw err;
-        /** First show only result then show with loop */
+        /** First show only result then show with loop and then show fields*/
         // console.log(result);
-        result.forEach((item) => {
-            console.log(`Name: ${item.name} | Address: ${item.address} | ID: ${item.id}`);
-        })
+        // console.log(fields);
+        // result.forEach((item) => {
+        //     console.log(`Name: ${item.name} | Address: ${item.address} | ID: ${item.id}`);
+        // })
     });
 });
