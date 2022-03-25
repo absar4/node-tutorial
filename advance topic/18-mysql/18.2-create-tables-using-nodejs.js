@@ -50,8 +50,6 @@
  Create primary key on an existing table:
  
  */
-
-
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
