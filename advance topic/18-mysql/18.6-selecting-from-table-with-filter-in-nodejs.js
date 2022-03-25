@@ -1,4 +1,5 @@
-// 18.5-selecting-from-table-and-displaying-data-nodejs.js
+// 18.6 selecting from table with filter in nodejs.js
+// Where Clause
 
 var mysql = require('mysql');
 
@@ -12,7 +13,7 @@ var con = mysql.createConnection({
 con.connect(function (err) {
     if (err) throw err;
     console.log("Connected!");
-    var sql = "SELECT * FROM customers";
+    var sql = "SELECT * FROM customers where address = 'Lahore'";
     con.query(sql, function (err, result, fields) {
         if (err) throw err;
         /** First show only result then show with loop and then show fields*/
