@@ -13,6 +13,6 @@ con.connect(function (err) {
             if (err) throw err;
             console.log("Database created");
         })
-        console.log("Connected! to Server on http://localhost");
+        console.log("Connected! to Server");
     
 });
