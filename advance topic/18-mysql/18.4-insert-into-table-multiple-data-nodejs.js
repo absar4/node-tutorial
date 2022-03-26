@@ -43,26 +43,26 @@
 
 
 // 18.3-insert-into-table-nodejs.js
-var mysql = require('mysql');
-var con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "mydb1"
-});
+// var mysql = require('mysql');
+// var con = mysql.createConnection({
+//     host: "localhost",
+//     user: "root",
+//     password: "",
+//     database: "mydb1"
+// });
 /*
  result.insertId ==> is used for displaying the current id for the row or in other words you can get
  the id of the row you just inserted
     Note: To be able to get the inserted id, only one row can be inserted.
 **/
-con.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected!");
-  var sql = "INSERT INTO customers (name, address) VALUES ('Pakistan', 'Lahore')";
-  con.query(sql, function (err, result) {
-    if (err) throw err;
-    console.log("Data INSERTED with id no " + result.insertId);
-  });
-});
+// con.connect(function(err) {
+//   if (err) throw err;
+//   console.log("Connected!");
+//   var sql = "INSERT INTO customers (name, address) VALUES ('Pakistan', 'Lahore')";
+//   con.query(sql, function (err, result) {
+//     if (err) throw err;
+//     console.log("Data INSERTED with id no " + result.insertId);
+//   });
+// });
 
 
